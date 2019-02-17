@@ -57,6 +57,24 @@
   height: 310px; 
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  padding: 24px;
+  font-size:18px;
+}
+th {
+  text-align: left;
+  padding: 24px;
+  font-weight: bold;
+  font-size:26px;
+
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -250,7 +268,6 @@
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
             <h1>Schedule</h1>
-            <!-- <p>3/1/19 to 3/2/19</p> -->
             <div class="agenda">
               <div class="row">
                 <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/01/19 - 4:00pm</div>
@@ -306,72 +323,42 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="FAQ" class="darker-black content-section text-center ">
+    <section id="FAQ" class="darker-black content-section text-center">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
             <h1>FAQ</h1>
-
-            <div class="row">
-              <div class="column1">
-                <p>What’s a Hackathon?</p>
-              </div>
-              <div class="column1">
-                <p>Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch — these generally take shape in the form of websites, mobile apps, and robots.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="column1">
-                <p>Who can participate?</p>
-              </div>
-              <div class="column1">
-                <p>Any student from the Great Neck community, grades 7 - 12, can register and participate in the hackathon. Even if you are unable to register for the hackathon ahead of time, all walk-ins will be welcome to participate. However, if you are able to, please register so you may be placed on a team!</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="column1">
-                <p>Do I need experience?</p>
-              </div>
-              <div class="column1">
-                <p>Students of ALL experience levels are welcome! Whether you're a designer, coder, tinkerer or somewhere in-between, there will be dedicated events and mentors to ease your way through your first hackathon experience. If you've never programmed before, feel free to follow any of the Learn tracks!</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="column1">
-                <p>Do I have to come for the entire 2 days?
-                </p>
-              </div>
-              <div class="column1">
-                <p>Attending both days of the hackathon is not mandatory. Students may attend either days of the event, or both days. To maximize the amount of time spent working with your team and on your projects, it is encouraged that students be there for both days.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="column1">
-                <p>Will there be food?</p>
-              </div>
-              <div class="column1">
-                <p>Yes, food will be provided for all of the participants of both days of the event. If you have any food related allergies, please make sure to notify us when registering for the hackathon. It is also strongly recommended that you bring some of your own snacks and drinks as you might get hungry or thirsty throughout the event.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="column1">
-                <p>Do I need a team or an idea to sign up?</p>
-              </div>
-              <div class="column1">
-                <p>Nope! Just come with a willingness to learn something new :) We encourage people to work in teams of up to four. If you can't find a team beforehand, worry not. We'll have a team-formation event at the beginning of the hackathon for the participants who are not already on a team.</p>
-              </div>
-            </div>
-
+          <table>
+            <tr>
+              <th>What’s a Hackathon?</th>
+              <td>Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch — these generally take shape in the form of websites, mobile apps, and robots.</td>
+            </tr>
+            <tr>
+              <th>Who can participate?</th>
+              <td>Any student from the Great Neck community, grades 7 - 12, can register and participate in the hackathon. Even if you are unable to register for the hackathon ahead of time, all walk-ins will be welcome to participate. However, if you are able to, please register so you may be placed on a team!</td>
+            </tr>
+            <tr>
+              <th>Do I need experience?</th>
+              <td>Students of ALL experience levels are welcome! Whether you're a designer, coder, tinkerer or somewhere in-between, there will be dedicated events and mentors to ease your way through your first hackathon experience. If you've never programmed before, feel free to follow any of the Learn tracks!</td>
+            </tr>
+            <tr>
+              <th>Do I have attend the entire hackathon?</th>
+              <td>Attending both days of the hackathon is not mandatory. Students may attend either days of the event, or both days. To maximize the amount of time spent working with your team and on your projects, it is encouraged that students be there for both days.</td>
+            </tr>
+            <tr>
+              <th>Will there be food?</th>
+              <td>Yes, food will be provided for all of the participants of both days of the event. If you have any food related allergies, please make sure to notify us when registering for the hackathon. It is also strongly recommended that you bring some of your own snacks and drinks as you might get hungry or thirsty throughout the event.</td>
+            </tr>
+            <tr>
+              <th>Do I need a team or an idea to sign up?</th>
+              <td>Nope! Just come with a willingness to learn something new :) We encourage people to work in teams of up to four. If you can't find a team beforehand, worry not. We'll have a team-formation event at the beginning of the hackathon for the participants who are not already on a team</td>
+            </tr>
+          </table>
           </div>
         </div>
       </div>
     </section>
-
+        
     <!-- Sponsors Section -->
     <section id="sponsors" class="content-section text-center">
       <div class="download-section">
@@ -389,7 +376,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Contact</h1>
-          <p>Interested in participating in GNL Hack-A-Thon, but have more questions? Know someone who'd make a great judge? Is your company interested in sponsoring us? Send an email to <a href="mailto:ahinz@greatnecklibrary.org" target="_top">Adam Hinz</a></p>
+          <p>Interested in participating in GNL Hack-A-Thon, but have more questions? Know someone who'd make a great judge? Is your company interested in sponsoring us? Send an email to <a href="mailto:ahinz@greatnecklibrary.org" target="_top">Adam Hinz.</a></p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22620.896032876357!2d-73.75336777847785!3d40.8043483277611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c289807543906b%3A0x79b08b5ca507a016!2sGreat+Neck+Library!5e0!3m2!1sen!2sus!4v1550439342021" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
