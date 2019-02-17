@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="That's a landing page for our first GNPL Hackathon">
+    <meta name="description" content="That's a landing page for our first GNL Hack-A-Thon">
     <meta name="author" content="Shylee Ezroni & Alan Golman">
 
-    <title>GNPL Hackathon 2019</title>
+    <title>GNL Hack-A-Thon 2019</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +37,51 @@
     @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
     @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
     @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+    
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 110px; 
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 310px; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  padding: 24px;
+  font-size:18px;
+}
+th {
+  text-align: left;
+  padding: 24px;
+  font-weight: bold;
+  font-size:26px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,7 +100,8 @@
             Menu <i class="fa fa-bars"></i>
           </button>
           <a class="navbar-brand page-scroll text-center" href="#page-top">
-            <img id="everloop" src="img/everloop.png"/> <span class="hidden-xs hidden-sm "><span class="light">GNPL</span> Hackathon </span>
+            <img id="everloop" src="img/everloop.png"/> <span class="hidden-xs hidden-sm "><span class="light">GNL</span> Hack-A-Thon </span>
+
           </a>
         </div>
 
@@ -70,16 +116,16 @@
               <a class="page-scroll" href="#about">About</a>
             </li>
             <li>
-              <a class="page-scroll" href="#generalRules">Learn</a>
+              <a class="page-scroll" href="#learn">Learn</a>
             </li>
             <li>
               <a class="page-scroll" href="#schedule">Schedule</a>
             </li>
             <li>
-              <a class="page-scroll" href="#projects">FAQ</a>
+              <a class="page-scroll" href="#FAQ">FAQ</a>
             </li>
             <li>
-              <a class="page-scroll" href="#location">Code of Conduct</a>
+              <a class="page-scroll" href="#sponsors">Sponsors</a>
             </li>
             <li>
               <a class="page-scroll" href="#contact">Contact</a>
@@ -97,7 +143,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-lg-12">
-              <!-- <h1 class="brand-heading">GNPL Hackathon</h1>
+              <!-- <h1 class="brand-heading">GNL Hack-A-Thon</h1>
               <p class="intro-text">Great Neck Library's Inaugural Hackathon!</p>
               <p class="intro-text">March 1st - March 2nd 2019</p> -->
               <!-- <a href="#about" class="btn btn-circle page-scroll">
@@ -113,17 +159,10 @@
     <section id="about" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>GNPL Hackathon 2019</h2>
-          <h3>3/1/19 - 3/2/19</h3>
-          <p>Welcome to Great Neck Library's inaugural hackathon! This year's focus will be on </p>
-
-          <!-- <p>As inscrições estão abertas à todos os participantes da XVII SIECOMP e devem ser feitas através do nosso <a href="https://goo.gl/forms/tvWTE4Dml3IRjMGn2">formulário de inscrição</a>. Durante todo o hackathon o time do GNPL Brasil e seus parceiros estarão dando apoio técnico, mentoria e ideação.</p>
-
-          <p><strong>Desafio:</strong> Construa um app para o <a href="http://creator.matrix.one">MATRIX Creator</a> que ajude a melhorar o dia-a-dia das pessoas no qual use pelo menos três recursos da <a href="https://matrix-io.github.io/matrix-documentation/">API do MATRIX Cretor</a> e uma API de qualquer serviço externo de sua escolha.</p>
-
-          <p><strong>Prêmio:</strong> O time vencedor receberá 1 kit MATRIX Creator e R$ 500 reais de servidor na AbsamHost. O segundo lugar receberá 1 kit MATRIX Creator. O terceiro colocado receberá R$ 250 reais de servidor na AbsamHost. Cada kit MATRIX Creator conta com: MATRIX Creator + Raspberry Pi 3 + Raspberry Pi Câmera V2 + Cartão de Memória de 32GB + Fonte de Alimentação.</p>
-
-          <p><a href="#modal" data-toggle="modal">Confira a lista dos selecionados!</a></p> -->
+          <h1>GNL Hack-A-Thon</h1>
+          <h2>March 1st - March 2nd, 2019</h2>
+          <h2><a href="https://docs.google.com/forms/d/1IFQr4Zns95AMdqPfHgCqrEn-vY4hrYbg536SxPnb--0/edit" target="_blank">Register Here!</a></h2>
+          <p>Welcome to Great Neck Library's inaugural hackathon! Rest of description blurb to come...</p>
 
           <!-- Modal -->
           <div class="modal fade" id="modal" tabindex="-1" role="dialog" >
@@ -131,7 +170,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Participantes do 1˚ GNPL Hackathon</h4>
+                  <h4 class="modal-title" id="myModalLabel">Participantes do 1˚ GNL Hack-A-Thon</h4>
                 </div>
                 <div class="modal-body">
                   João Victor Mota do Nascimento</br>
@@ -165,20 +204,59 @@
       </div>
     </section>
 
-    <!-- General Rules Section -->
-    <section id="generalRules" class="darker-black content-section text-center ">
+    <!-- Learn Section -->
+    <section id="learn" class="darker-black content-section text-center ">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
-            <h2>Learn</h2>
-            <!-- <p>Todas as equipes devem ter 4 pessoas.</p>
-            <p>Todas as equipes devem mandar seus times para o email (<strong>diego.leite@admobilize.com</strong>), para poder participar do evento. O título deve ser o nome do projeto. O corpo do e-mail deve conter uma descrição de até 140 caracteres sobre o projeto e o nome de cada integrante do time.</p>
-            <p>Para receber o kit MATRIX Creator de trabalho cada integrante do time deverá assinar o termo de responsabilidade que será fornecido no dia do hackathon.</p>
-            <p>Para que a equipe possa iniciar os trabalhos deve ser criado um repositório aberto no github. O link deve ser enviado na mesma thread de e-mail até o horário limite descrito na agenda do hackathon.</p>
-            <p>Para que o projeto possa ser apresentado na sessão de pitches o app desenvolvido deve ter sido publicado na <a href="http://apps.matrix.one">MATRIX App Store</a>. O link gerado deve ser enviado na mesma thread de e-mail até o horário descrito na agenda do hackathon.</p>
-            <p>Todas as equipes convocadas para a sessão de pitch terá que apresentar uma demonstração de sua solução e slides não serão permitidos. A apresentação será de 5 minutos + 3 minutos de sessão de perguntas e respostas dos jurados.</p>
-            <p>As equipes vencedoras estarão sujeitas a uma revisão de código em algum momento após o evento, ou imediatamente antes de receber o prêmio.</p>
-            <p>É proibido o uso de código pronto! Todos iniciarão a maratona de programação ao mesmo tempo. Isso garante a imparcialidade da competição. Não participe da competição se for reutilizar um projeto já existente.</p> -->
+            <h1>Learn</h1>
+            <p>Learn something new via one of the tracks below!</p>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://learn.devfe.st/beginner/" target="_blank">Beginner Development Walkthrough</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Fundamentals of HTML, CSS, and JavaScript</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://learn.devfe.st/webdev/" target="_blank">Intermediate Dev Walkthrough</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Python, Flask, HTML, and CSS</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://learn.adicu.com/python/" target="_blank">Intro to Python Programming</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Python Fundamentals</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://www.codecademy.com/learn/learn-python" target="_blank">Learn Python</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: All Things Python</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/" target="_blank">How to Create a Website from Start to Finish</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Bootstrap, and Github</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -189,55 +267,54 @@
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
-            <h2>Schedule</h2>
-            <p>3/1/19 to 3/2/19</p>
+            <h1>Schedule</h1>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 8:30am</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Apresentação do Hackathon</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/01/19 - 4:00pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Doors open (only Friday, open at 6 p.m. on Saturday)</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 9:00am</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Início do Hackathon</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/01/19 - 6:00pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Official Start of GNL Hack-A-Thon!</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 10:30am</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Limite para envio do time e projeto</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/01/19 - 12:00am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Day 1 Finish</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 11:30am</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Limite para envio do link do GitHub</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/02/19 - 6:00pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Day 2 Start</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 1:30pm</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">LABOTEC III - Laboratório de Redes</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Limite para publicação e envio de link do App</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/02/19 - 10:00pm</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Deadline to Finish Working/Hacking Ends!</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 3:30pm</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Palco Principal (Auditório 4)</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Início da Pitch Session</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/02/19 - 10:00pm to 12:00am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Project Judging, Awards, and Closing Ceremony</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
             <div class="agenda">
               <div class="row">
-                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 4:10pm</div>
-                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">Palco Principal (Auditório 4)</div>
-                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Premiação do Hackathon</div>
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">03/02/19 - 12:00am</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">End of GNL Hack-A-Thon!</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Room: LEVELS</div>
               </div>
             </div>
           </div>
@@ -245,25 +322,49 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="darker-black content-section">
+    <!-- FAQ Section -->
+    <section id="FAQ" class="darker-black content-section text-center">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
-            <h2 class="text-center">FAQs</h2>
-                      </div>
+            <h1>FAQ</h1>
+          <table>
+            <tr>
+              <th>What’s a Hackathon?</th>
+              <td>Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch — these generally take shape in the form of websites, mobile apps, and robots.</td>
+            </tr>
+            <tr>
+              <th>Who can participate?</th>
+              <td>Any student from the Great Neck community, grades 7 - 12, can register and participate in the hackathon. Even if you are unable to register for the hackathon ahead of time, all walk-ins will be welcome to participate. However, if you are able to, please register so you may be placed on a team!</td>
+            </tr>
+            <tr>
+              <th>Do I need experience?</th>
+              <td>Students of ALL experience levels are welcome! Whether you're a designer, coder, tinkerer or somewhere in-between, there will be dedicated events and mentors to ease your way through your first hackathon experience. If you've never programmed before, feel free to follow any of the Learn tracks!</td>
+            </tr>
+            <tr>
+              <th>Do I have attend the entire hackathon?</th>
+              <td>Attending both days of the hackathon is not mandatory. Students may attend either days of the event, or both days. To maximize the amount of time spent working with your team and on your projects, it is encouraged that students be there for both days.</td>
+            </tr>
+            <tr>
+              <th>Will there be food?</th>
+              <td>Yes, food will be provided for all of the participants of both days of the event. If you have any food related allergies, please make sure to notify us when registering for the hackathon. It is also strongly recommended that you bring some of your own snacks and drinks as you might get hungry or thirsty throughout the event.</td>
+            </tr>
+            <tr>
+              <th>Do I need a team or an idea to sign up?</th>
+              <td>Nope! Just come with a willingness to learn something new :) We encourage people to work in teams of up to four. If you can't find a team beforehand, worry not. We'll have a team-formation event at the beginning of the hackathon for the participants who are not already on a team</td>
+            </tr>
+          </table>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Location Section -->
-    <section id="location" class="content-section text-center">
+        
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="content-section text-center">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
-            <h2>Location</h2>
-            <p>Great Neck Public Library <strong>Levels</strong></p>
-            <!-- insert picture of library here -->
+            <h1>Sponsors</h1>
           </div>
         </div>
       </div>
@@ -274,10 +375,9 @@
     <section id="contact" class="darker-black container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>GNPL Levels</h2>
-          <p>Feel free to get in touch with us.</p>
-          <p><a href="http://www.matrixlabs.ai/contact.html">put link to get in touch here</a>
-          </p>
+          <h1>Contact</h1>
+          <p>Interested in participating in GNL Hack-A-Thon, but have more questions? Know someone who'd make a great judge? Is your company interested in sponsoring us? Send an email to <a href="mailto:ahinz@greatnecklibrary.org" target="_top">Adam Hinz.</a></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22620.896032876357!2d-73.75336777847785!3d40.8043483277611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c289807543906b%3A0x79b08b5ca507a016!2sGreat+Neck+Library!5e0!3m2!1sen!2sus!4v1550439342021" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -286,6 +386,7 @@
     <footer>
       <div class="container text-center">
         <p>Copyright &copy; GNPL 2019</p>
+        <p><a href="https://devfe.st/Code%20of%20Conduct%202019.pdf" target="_blank">Code of Conduct</a></p>
       </div>
     </footer>
 
