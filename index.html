@@ -37,6 +37,25 @@
     @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
     @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
     @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+    
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 110px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -167,20 +186,59 @@
       </div>
     </section>
 
-    <!-- General Rules Section -->
+    <!-- Learn Section -->
     <section id="generalRules" class="darker-black content-section text-center ">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
-            <h2>Learn</h2>
-            <!-- <p>Todas as equipes devem ter 4 pessoas.</p>
-            <p>Todas as equipes devem mandar seus times para o email (<strong>diego.leite@admobilize.com</strong>), para poder participar do evento. O título deve ser o nome do projeto. O corpo do e-mail deve conter uma descrição de até 140 caracteres sobre o projeto e o nome de cada integrante do time.</p>
-            <p>Para receber o kit MATRIX Creator de trabalho cada integrante do time deverá assinar o termo de responsabilidade que será fornecido no dia do hackathon.</p>
-            <p>Para que a equipe possa iniciar os trabalhos deve ser criado um repositório aberto no github. O link deve ser enviado na mesma thread de e-mail até o horário limite descrito na agenda do hackathon.</p>
-            <p>Para que o projeto possa ser apresentado na sessão de pitches o app desenvolvido deve ter sido publicado na <a href="http://apps.matrix.one">MATRIX App Store</a>. O link gerado deve ser enviado na mesma thread de e-mail até o horário descrito na agenda do hackathon.</p>
-            <p>Todas as equipes convocadas para a sessão de pitch terá que apresentar uma demonstração de sua solução e slides não serão permitidos. A apresentação será de 5 minutos + 3 minutos de sessão de perguntas e respostas dos jurados.</p>
-            <p>As equipes vencedoras estarão sujeitas a uma revisão de código em algum momento após o evento, ou imediatamente antes de receber o prêmio.</p>
-            <p>É proibido o uso de código pronto! Todos iniciarão a maratona de programação ao mesmo tempo. Isso garante a imparcialidade da competição. Não participe da competição se for reutilizar um projeto já existente.</p> -->
+            <h1>Learn</h1>
+            <p>Learn something new via one of the tracks below!</p>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://learn.devfe.st/beginner/" target="_blank">Beginner Development Walkthrough</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Fundamentals of HTML, CSS, and JavaScript</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://learn.devfe.st/webdev/" target="_blank">Intermediate Dev Walkthrough</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Python, Flask, HTML, and CSS</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://learn.adicu.com/python/" target="_blank">Intro to Python Programming</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Python Fundamentals</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://www.codecademy.com/learn/learn-python" target="_blank">Learn Python</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: All Things Python</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <h2><a href="https://startbootstrap.com/guides/how-to-create-a-website-with-github-pages/" target="_blank">How to Create a Website from Start to Finish</a></h2>
+              </div>
+              <div class="column">
+                <p>Topics Covered: Bootstrap, and Github</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
